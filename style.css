@@ -77,7 +77,7 @@ h1 { font-size: 36px;
 }
 
 header {
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -142,10 +142,26 @@ header {
     text-decoration: none;
 }
 
+.about-me__links {
+    margin-bottom: 16px;
+}
 .about-me__artwork--wrapper {
     
 }
 
 .about-me__artwork {
     width: 100%;
+}
+
+.section__title {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+#languages {
+    background-color: #f8f8f8;
 }
