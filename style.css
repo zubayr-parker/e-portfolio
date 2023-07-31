@@ -7,6 +7,10 @@
   font-family: "Lato", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -39,6 +43,7 @@ nav {
   margin: 0 auto;
   max-width: 1000px;
   width: 100%;
+  padding: 0 12px;
 }
 
 ul {
@@ -92,6 +97,7 @@ header {
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
+  padding: 0 12px;
 }
 
 .about-me__description--container {
@@ -125,6 +131,8 @@ header {
   font-size: 20px;
   text-align: center;
   margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me__info--title {
@@ -184,6 +192,8 @@ header {
 .language__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .language__img--wrapper {
@@ -293,3 +303,100 @@ header {
     color: #fff;
   }
 
+  /* Footer */
+  #footer {
+    background-color: #242424;
+    padding: 8% 0;
+  }
+
+  .footer__copyright, .footer__social--link {
+    color: white;
+  }
+
+  
+
+  .footer__social--list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 28px;
+  }
+
+  .footer__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footer__logo--img {
+    width: 100px;
+    filter: invert(100%)
+    
+  }
+
+  .footer__logo {
+    margin-bottom: 24px;
+  }
+
+@media (max-width:768px) {
+  nav {
+    height: 68px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .about-me__info--para {
+    font-size: 18px;
+  }
+  
+  .language {
+    width: 33.3333%;
+  }
+
+  .project__description--para {
+    font-size: 14px;
+  }
+
+  .project__description {
+    left:30px;
+    padding-right:30px;
+  }
+}
+
+
+@media (max-width:480px) {
+  .nav__link:not(:last-child) {
+    display: none;
+  }
+
+  .project__description--para {
+    display: none;
+  }
+
+  .project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+  .project__description--links {
+    justify-content: center;
+    display: flex;
+  }
+
+  .project__description--sub-title {
+    text-align: center;
+    margin: 12px 0;
+
+  }
+  .project__description--title {
+   line-height: 1;
+   font-size: 32px;
+   text-align: center;
+
+  }
+}
